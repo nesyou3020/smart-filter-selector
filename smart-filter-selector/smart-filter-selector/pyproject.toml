@@ -1,0 +1,25 @@
+[project]
+name = "smart-filter-selector"
+version = "0.1.0"
+description = "A Python microservice for intelligent filter selection using embeddings and LLMs."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "flask>=3.0.0",
+    "flask-cors>=4.0.0",
+    "langchain>=0.1.0",
+    "langchain-community>=0.0.10",
+    "numpy>=1.26.0",
+    "scikit-learn>=1.5.0",
+    "requests>=2.31.0",
+    "pydantic>=2.5.0",
+    "python-dotenv>=1.0.0",
+    "langdetect>=1.0.9",
+    "chromadb>=1.2.2",
+    "deep-translator>=1.11.4",
+    "nltk>=3.9.2",
+    "tqdm>=4.67.1",
+    "tiktoken>=0.12.0",
+    "pandas>=2.3.3",
+    "openpyxl>=3.1.5",
+]

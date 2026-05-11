@@ -1,0 +1,25 @@
+{
+  "language-level": {
+    "A1": "Beginner — understands and uses very basic everyday expressions and phrases. Can introduce themselves and ask simple questions.",
+    "A2": "Elementary — can communicate in simple and routine tasks, describe basic aspects of their life and environment.",
+    "B1": "Intermediate — can understand main points of clear standard input on familiar matters like work or school.",
+    "B2": "Upper intermediate — can interact with fluency and spontaneity with native speakers on general topics.",
+    "C1": "Advanced — can express ideas fluently and spontaneously without much obvious searching for expressions.",
+    "C2": "Proficient — can understand virtually everything heard or read, summarize information, and express themselves precisely.",
+    "native": "Native or bilingual — speaks the language as a mother tongue or with complete proficiency."
+  },
+  "experience": {
+    "Experts": "Top-level professionals with 10+ years of experience. Provide strategic direction and solve complex problems.",
+    "Seniors": "Highly experienced professionals (5–10 years). Can lead projects and mentor others with autonomy.",
+    "Confirmed": "Mid-level professionals (3–5 years). Work independently and handle moderately complex tasks.",
+    "Medium": "Intermediate-level professionals with developing expertise (around 2–3 years of experience).",
+    "Juniors": "Entry-level professionals (0–2 years). Require guidance and supervision while learning core skills."
+  },
+  "tool-expertise": {
+    "basic": "Has minimal familiarity with the tool — can perform only very simple operations with assistance.",
+    "limited": "Knows some basic functionalities but lacks confidence with advanced or complex tasks.",
+    "intermediate": "Comfortably uses common features and solves routine problems without supervision.",
+    "advanced": "Deeply understands tool features and can optimize workflows, scripts, or configurations.",
+    "expert": "Absolute mastery — capable of designing, optimizing, and troubleshooting complex tool usage scenarios."
+  }
+}

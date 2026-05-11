@@ -1,0 +1,229 @@
+[
+  {
+    "query": "I’m working on a project related to train signaling systems.",
+    "language": "en",
+    "expected": ["Railway", "Signalling"]
+  },
+  {
+    "query": "Je travaille sur un projet de gestion d’énergie nucléaire.",
+    "language": "fr",
+    "expected": ["Energy", "Nucléaire"]
+  },
+  {
+    "query": "Estoy desarrollando una aplicación para líneas de alta velocidad.",
+    "language": "es",
+    "expected": ["Railway", "High Speed Lines"]
+  },
+  {
+    "query": "We are designing an ERTMS signaling system for high-speed trains.",
+    "language": "en",
+    "expected": ["Railway", "Signalling", "ERTMS"]
+  },
+  {
+    "query": "Le projet concerne un système CBTC pour métro automatique.",
+    "language": "fr",
+    "expected": ["Railway", "Signalling", "CBTC", "Metro"]
+  },
+  {
+    "query": "Nuestro trabajo incluye el desarrollo del enclavamiento IXL.",
+    "language": "es",
+    "expected": ["Railway", "Signalling", "Interlocking (IXL)"]
+  },
+  {
+    "query": "We use MATLAB and Simulink for modeling dynamic systems.",
+    "language": "en",
+    "expected": ["MATLAB", "SIMULINK"]
+  },
+  {
+    "query": "Le modèle est développé sous Scade et testé avec TestLink.",
+    "language": "fr",
+    "expected": ["SCADE", "TestLink"]
+  },
+  {
+    "query": "Usamos Primavera y Ps Next para la gestión de proyectos.",
+    "language": "es",
+    "expected": ["Primavera", "Ps Next"]
+  },
+  {
+    "query": "Designing low voltage systems for railway stations.",
+    "language": "en",
+    "expected": ["Railway", "Low Voltage"]
+  },
+  {
+    "query": "Nous travaillons sur la caténaire pour le train électrique.",
+    "language": "fr",
+    "expected": ["Railway", "High Voltage", "Catenary"]
+  },
+  {
+    "query": "El proyecto trata de la protección eléctrica de redes de media tensión.",
+    "language": "es",
+    "expected": ["Energy", "Transmission And Distribution", "Electrical Protection"]
+  },
+  {
+    "query": "The software follows the V-model and EN50128 standard.",
+    "language": "en",
+    "expected": ["Cycle en V", "EN50128"]
+  },
+  {
+    "query": "Le développement est conforme à la norme EN50129 et à la méthode B.",
+    "language": "fr",
+    "expected": ["EN50129", "Méthode B"]
+  },
+  {
+    "query": "Usamos Git y UML para la documentación del software.",
+    "language": "es",
+    "expected": ["GIT", "UML"]
+  },
+  {
+    "query": "Performing FMECA and Monte Carlo simulations for risk analysis.",
+    "language": "en",
+    "expected": ["FMEA - FMECA", "Monte carlo"]
+  },
+  {
+    "query": "L’analyse de sécurité est faite selon la norme IEC 61508 et EN50126.",
+    "language": "fr",
+    "expected": ["IEC 61508", "EN50126"]
+  },
+  {
+    "query": "Estamos usando Scade y Prover para validar sistemas críticos.",
+    "language": "es",
+    "expected": ["SCADE", "Prover"]
+  },
+  {
+    "query": "We’re designing the civil engineering layout for railway infrastructure.",
+    "language": "en",
+    "expected": ["Infrastructure", "Fixed Installations / Civil Engineering"]
+  },
+  {
+    "query": "L’étude porte sur les passages à niveau et la géotechnique ferroviaire.",
+    "language": "fr",
+    "expected": ["Infrastructure", "Level Crossings", "Geotechnology"]
+  },
+  {
+    "query": "Incluye el diseño hidráulico de las obras ferroviarias.",
+    "language": "es",
+    "expected": ["Infrastructure", "Hydraulics"]
+  },
+  {
+    "query": "We analyze rotating machines and piping systems in a power plant.",
+    "language": "en",
+    "expected": ["Energy", "Equipment and facilities", "Rotating Machines", "Piping"]
+  },
+  {
+    "query": "Étude sur la dissipation thermique et la dynamique des fluides.",
+    "language": "fr",
+    "expected": ["Energy", "Fluid Mechanics", "Thermal Dissipation", "Fluid Dynamics"]
+  },
+  {
+    "query": "Proyecto relacionado con la mecánica de fluidos y electromagnetismo.",
+    "language": "es",
+    "expected": ["Energy", "Fluid Mechanics", "Electromagnetism"]
+  },
+  {
+    "query": "Installing Ethernet and radio communication for railway systems.",
+    "language": "en",
+    "expected": ["Low Voltage", "Radio / Wireless", "Wired Transmissions"]
+  },
+  {
+    "query": "Mise en place d’un système d’interphonie et de sonorisation dans les stations.",
+    "language": "fr",
+    "expected": ["Interphonie", "Sonorisation"]
+  },
+  {
+    "query": "Configuramos routers y conmutadores Ethernet industriales.",
+    "language": "es",
+    "expected": ["Routeurs et IAD", "Commutateurs Ethernet"]
+  },
+  {
+    "query": "Following LOI MOP and BIM standards for the construction project.",
+    "language": "en",
+    "expected": ["LOI MOP", "BIM"]
+  },
+  {
+    "query": "Le projet est géré sous Ps Next et conforme à la norme Cenelec.",
+    "language": "fr",
+    "expected": ["Ps Next", "Cenelec"]
+  },
+  {
+    "query": "Usamos Capella y SysML para modelar la arquitectura del sistema.",
+    "language": "es",
+    "expected": ["Capella", "SYSml"]
+  },
+
+
+  {
+    "query": "We are developing a SCADA system for industrial automation.",
+    "language": "en",
+    "expected": ["Automation", "SCADA"]
+  },
+  {
+    "query": "Nous concevons un système de cybersécurité pour les réseaux ferroviaires.",
+    "language": "fr",
+    "expected": ["Cybersecurity", "Railway", "Network"]
+  },
+  {
+    "query": "Estamos implementando sensores IoT para monitorizar la energía solar.",
+    "language": "es",
+    "expected": ["Energy", "Renewable Energie", "IoT"]
+  },
+  {
+    "query": "Stiamo progettando sistemi di segnalamento ferroviario automatici.",
+    "language": "it",
+    "expected": ["Railway", "Signalling", "Automation"]
+  },
+  {
+    "query": "Designing high voltage substations for energy distribution.",
+    "language": "en",
+    "expected": ["Energy", "High Voltage", "Transmission And Distribution"]
+  },
+  {
+    "query": "Le projet inclut la modélisation sous Simulink et MATLAB.",
+    "language": "fr",
+    "expected": ["SIMULINK", "MATLAB"]
+  },
+  {
+    "query": "Estamos usando BIM y LOI MOP para el diseño civil.",
+    "language": "es",
+    "expected": ["BIM", "LOI MOP", "Infrastructure"]
+  },
+  {
+    "query": "Il software segue lo standard EN50128 e il modello a V.",
+    "language": "it",
+    "expected": ["EN50128", "Cycle en V"]
+  },
+  {
+    "query": "We’re testing the safety of railway communication systems.",
+    "language": "en",
+    "expected": ["Railway", "Safety", "Communication"]
+  },
+  {
+    "query": "Le système SCADA contrôle la distribution électrique.",
+    "language": "fr",
+    "expected": ["SCADA", "Energy", "Electrical Systems"]
+  },
+  {
+    "query": "analizando proteccion electrica y media tension",
+    "language": "es",
+    "expected": ["Electrical Protection", "Medium Voltage (MV)", "Energy"]
+  },
+  {
+    "query": "System design: ERTMS, CBTC, or maybe both?",
+    "language": "en",
+    "expected": ["ERTMS", "CBTC", "Signalling"]
+  },
+  {
+    "query": "le dev suit la norme cenelec et la méthode b",
+    "language": "fr",
+    "expected": ["Cenelec", "Méthode B"]
+  },
+  {
+    "query": "stiamo lavorando su catene di trazione elettriche e catenarie.",
+    "language": "it",
+    "expected": ["Traction Systems", "Catenary", "Railway"]
+  },
+  {
+    "query": "not sure something with trains and energy i dont know",
+    "language": "en",
+    "expected": ["Railway", "Energy"]
+  }
+]
