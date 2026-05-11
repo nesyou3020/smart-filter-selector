@@ -111,4 +111,4 @@ This architecture balances:
 ---
 
 Continue with the next part in:
-- `/home/runner/work/smart-filter-selector/smart-filter-selector/smart_filter_selector_guide_part2.md`
+- `./smart_filter_selector_guide_part2.md`
