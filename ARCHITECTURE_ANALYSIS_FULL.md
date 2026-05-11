@@ -1,7 +1,7 @@
 # Smart Filter Selector — Complete Architectural Analysis
 
-Repository analyzed: `/home/runner/work/smart-filter-selector/smart-filter-selector`  
-Runtime project root: `/home/runner/work/smart-filter-selector/smart-filter-selector/smart-filter-selector/smart-filter-selector`
+Repository analyzed: `<repository-root>`
+Runtime project root: `<repository-root>/smart-filter-selector/smart-filter-selector`
 
 ## 1) Project structure and purpose
 

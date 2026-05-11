@@ -1,6 +1,6 @@
 # Smart Filter Selector — Repository File Tree
 
-Root analyzed: `/home/runner/work/smart-filter-selector/smart-filter-selector`
+Root analyzed: `<repository-root>`
 
 ```text
 .
