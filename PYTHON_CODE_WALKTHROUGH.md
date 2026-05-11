@@ -586,7 +586,7 @@ Normalize text before embedding lookup.
 - Joins the remaining tokens.
 
 #### Data effect
-A sentence like a multilingual natural query becomes a compressed bag-of-words-like string, which may change semantic quality but reduces noise.
+A sentence like a multilingual natural query becomes a compressed bag-of-words-like string. In the current implementation this looks like an intentional simplicity trade-off: the code favors lightweight noise reduction before embedding lookup, but it may also discard useful nuance because there is no alternate richer preprocessing path active in the runtime code.
 
 ### `find_similar_filters(query)`
 
