@@ -1,6 +1,6 @@
 # Smart Filter Selector — Python Code Walkthrough
 
-Repository root in this workspace: `/home/runner/work/smart-filter-selector/smart-filter-selector`  
+Repository root: `<repository-root>`  
 Runtime Python project: `<repository-root>/smart-filter-selector/smart-filter-selector`
 
 This document explains the Python codebase in execution order, then breaks the code down file by file. It covers imports, top-level execution, classes, functions, methods, major branches, inputs, outputs, and how data moves between components.
@@ -114,7 +114,7 @@ These `__init__.py` files are empty package markers. They do not add runtime log
 
 ## 3. File-by-file walkthrough
 
-## 3.1 `/home/runner/work/smart-filter-selector/smart-filter-selector/smart-filter-selector/smart-filter-selector/run.py`
+## 3.1 `<repository-root>/smart-filter-selector/smart-filter-selector/run.py`
 
 ### Role in the system
 This is the process entrypoint for the Flask service.
@@ -141,7 +141,7 @@ It provides the simplest boot path for local development and container startup.
 
 ---
 
-## 3.2 `/home/runner/work/smart-filter-selector/smart-filter-selector/smart-filter-selector/smart-filter-selector/app/config.py`
+## 3.2 `<repository-root>/smart-filter-selector/smart-filter-selector/app/config.py`
 
 ### Role in the system
 Centralizes application constants.
@@ -186,7 +186,7 @@ Almost every service imports `config`, so this file effectively defines the oper
 
 ---
 
-## 3.3 `/home/runner/work/smart-filter-selector/smart-filter-selector/smart-filter-selector/smart-filter-selector/app/main.py`
+## 3.3 `<repository-root>/smart-filter-selector/smart-filter-selector/app/main.py`
 
 ### Role in the system
 Builds the Flask application object.
@@ -234,7 +234,7 @@ It separates framework assembly from the process entrypoint so the app can be im
 
 ---
 
-## 3.4 `/home/runner/work/smart-filter-selector/smart-filter-selector/smart-filter-selector/smart-filter-selector/app/models/request_models.py`
+## 3.4 `<repository-root>/smart-filter-selector/smart-filter-selector/app/models/request_models.py`
 
 ### Role in the system
 Validates incoming API request payloads.
@@ -271,7 +271,7 @@ It groups optional tuning parameters so the route can accept one clean `options`
 
 ---
 
-## 3.5 `/home/runner/work/smart-filter-selector/smart-filter-selector/smart-filter-selector/smart-filter-selector/app/models/response_models.py`
+## 3.5 `<repository-root>/smart-filter-selector/smart-filter-selector/app/models/response_models.py`
 
 ### Role in the system
 Defines response schemas for documentation and structure, although the routes return plain dictionaries rather than constructing these models directly.
@@ -317,7 +317,7 @@ It captures intended response contracts even though the rest of the code current
 
 ---
 
-## 3.6 `/home/runner/work/smart-filter-selector/smart-filter-selector/smart-filter-selector/smart-filter-selector/app/routes/filter_routes.py`
+## 3.6 `<repository-root>/smart-filter-selector/smart-filter-selector/app/routes/filter_routes.py`
 
 ### Role in the system
 Defines the HTTP API surface and translates HTTP requests into service calls.
@@ -390,7 +390,7 @@ It is the boundary between HTTP and the AI pipeline.
 
 ---
 
-## 3.7 `/home/runner/work/smart-filter-selector/smart-filter-selector/smart-filter-selector/smart-filter-selector/app/services/hybrid_selector.py`
+## 3.7 `<repository-root>/smart-filter-selector/smart-filter-selector/app/services/hybrid_selector.py`
 
 ### Role in the system
 This is the main orchestrator. It does not perform the low-level AI work itself. Instead, it coordinates specialized services in sequence.
@@ -502,7 +502,7 @@ It expresses the project’s architecture directly: translation first, retrieval
 
 ---
 
-## 3.8 `/home/runner/work/smart-filter-selector/smart-filter-selector/smart-filter-selector/smart-filter-selector/app/services/embedding_service.py`
+## 3.8 `<repository-root>/smart-filter-selector/smart-filter-selector/app/services/embedding_service.py`
 
 ### Role in the system
 Loads and searches embeddings.
@@ -622,7 +622,7 @@ It cheaply narrows a large filter space into a smaller candidate set before the 
 
 ---
 
-## 3.9 `/home/runner/work/smart-filter-selector/smart-filter-selector/smart-filter-selector/smart-filter-selector/app/services/llm_service.py`
+## 3.9 `<repository-root>/smart-filter-selector/smart-filter-selector/app/services/llm_service.py`
 
 ### Role in the system
 Refines retrieved candidates with an LLM and forces structured output.
@@ -699,7 +699,7 @@ Embedding search finds semantically nearby items, but the LLM is used as a highe
 
 ---
 
-## 3.10 `/home/runner/work/smart-filter-selector/smart-filter-selector/smart-filter-selector/smart-filter-selector/app/services/level_detector.py`
+## 3.10 `<repository-root>/smart-filter-selector/smart-filter-selector/app/services/level_detector.py`
 
 ### Role in the system
 Runs a second LLM task focused on level inference rather than filter selection.
@@ -770,7 +770,7 @@ It isolates a separate inference concern so filter selection and level detection
 
 ---
 
-## 3.11 `/home/runner/work/smart-filter-selector/smart-filter-selector/smart-filter-selector/smart-filter-selector/app/services/translation_service.py`
+## 3.11 `<repository-root>/smart-filter-selector/smart-filter-selector/app/services/translation_service.py`
 
 ### Role in the system
 Provides lightweight language detection and translation before all downstream processing.
@@ -815,7 +815,7 @@ The embedding and LLM stages are designed around an English-centric downstream w
 
 ---
 
-## 3.12 `/home/runner/work/smart-filter-selector/smart-filter-selector/smart-filter-selector/smart-filter-selector/app/services/ollama_client.py`
+## 3.12 `<repository-root>/smart-filter-selector/smart-filter-selector/app/services/ollama_client.py`
 
 ### Role in the system
 Wraps low-level HTTP calls to Ollama.
@@ -851,7 +851,7 @@ It keeps HTTP details out of higher-level services.
 
 ---
 
-## 3.13 `/home/runner/work/smart-filter-selector/smart-filter-selector/smart-filter-selector/smart-filter-selector/app/utils/filter_loader.py`
+## 3.13 `<repository-root>/smart-filter-selector/smart-filter-selector/app/utils/filter_loader.py`
 
 ### Role in the system
 Loads the filter taxonomy and normalizes it into a flat structure.
@@ -902,7 +902,7 @@ The raw taxonomy can be nested or flat, but the embedding pipeline wants a unifo
 
 ---
 
-## 3.14 `/home/runner/work/smart-filter-selector/smart-filter-selector/smart-filter-selector/smart-filter-selector/app/utils/similarity.py`
+## 3.14 `<repository-root>/smart-filter-selector/smart-filter-selector/app/utils/similarity.py`
 
 ### Role in the system
 Provides cosine-similarity math utilities.
@@ -934,7 +934,7 @@ Only `cosine_similarity()` is used in the active retrieval path. `batch_cosine_s
 
 ---
 
-## 3.15 `/home/runner/work/smart-filter-selector/smart-filter-selector/smart-filter-selector/smart-filter-selector/app/utils/token_count.py`
+## 3.15 `<repository-root>/smart-filter-selector/smart-filter-selector/app/utils/token_count.py`
 
 ### Role in the system
 Estimates prompt size before LLM calls.
@@ -955,7 +955,7 @@ The service logs prompt sizes for observability and prompt-cost awareness, even 
 
 ---
 
-## 3.16 `/home/runner/work/smart-filter-selector/smart-filter-selector/smart-filter-selector/smart-filter-selector/scripts/generate_embeddings.py`
+## 3.16 `<repository-root>/smart-filter-selector/smart-filter-selector/scripts/generate_embeddings.py`
 
 ### Role in the system
 Creates the production embedding store in ChromaDB.
@@ -1000,7 +1000,7 @@ Without this script, `EmbeddingService` has no vector database to load.
 
 ---
 
-## 3.17 `/home/runner/work/smart-filter-selector/smart-filter-selector/smart-filter-selector/smart-filter-selector/scripts/generate_embeddings_json.py`
+## 3.17 `<repository-root>/smart-filter-selector/smart-filter-selector/scripts/generate_embeddings_json.py`
 
 ### Role in the system
 Legacy alternative embedding-generation script that writes a JSON file instead of ChromaDB.
@@ -1022,7 +1022,7 @@ It documents an earlier design phase where embeddings were stored as JSON rather
 
 ---
 
-## 3.18 `/home/runner/work/smart-filter-selector/smart-filter-selector/smart-filter-selector/smart-filter-selector/test_api.py`
+## 3.18 `<repository-root>/smart-filter-selector/smart-filter-selector/test_api.py`
 
 ### Role in the system
 Manual API smoke test script at repository runtime root.
@@ -1066,13 +1066,13 @@ It provides a quick human-readable test harness for a running local service.
 
 ---
 
-## 3.19 `/home/runner/work/smart-filter-selector/smart-filter-selector/smart-filter-selector/smart-filter-selector/test/test_api.py`
+## 3.19 `<repository-root>/smart-filter-selector/smart-filter-selector/test/test_api.py`
 
 This file is effectively a duplicate of `test_api.py` with the same imports, functions, branches, and behavior. It exists as a second copy under the `test/` folder.
 
 ---
 
-## 3.20 `/home/runner/work/smart-filter-selector/smart-filter-selector/smart-filter-selector/smart-filter-selector/test/test_queries.py`
+## 3.20 `<repository-root>/smart-filter-selector/smart-filter-selector/test/test_queries.py`
 
 ### Role in the system
 Runs many end-to-end API evaluations and computes retrieval quality metrics.
@@ -1141,7 +1141,7 @@ It provides a measurable evaluation loop for the end-to-end AI system.
 
 ---
 
-## 3.21 `/home/runner/work/smart-filter-selector/smart-filter-selector/smart-filter-selector/smart-filter-selector/test/test_lang_translation.py`
+## 3.21 `<repository-root>/smart-filter-selector/smart-filter-selector/test/test_lang_translation.py`
 
 ### Role in the system
 Manual translation smoke test.
@@ -1168,7 +1168,7 @@ It is a quick executable script for visually verifying multilingual preprocessin
 
 ---
 
-## 3.22 `/home/runner/work/smart-filter-selector/smart-filter-selector/smart-filter-selector/smart-filter-selector/test/translation_service_llm.py`
+## 3.22 `<repository-root>/smart-filter-selector/smart-filter-selector/test/translation_service_llm.py`
 
 ### Role in the system
 Experimental alternative translation implementation using an LLM instead of `deep_translator`.
@@ -1220,11 +1220,11 @@ It shows an alternate design direction: translation as another structured LLM ta
 ## 3.23 Empty package files
 
 The following files are empty and only mark packages:
-- `/home/runner/work/smart-filter-selector/smart-filter-selector/smart-filter-selector/smart-filter-selector/app/__init__.py`
-- `/home/runner/work/smart-filter-selector/smart-filter-selector/smart-filter-selector/smart-filter-selector/app/models/__init__.py`
-- `/home/runner/work/smart-filter-selector/smart-filter-selector/smart-filter-selector/smart-filter-selector/app/routes/__init__.py`
-- `/home/runner/work/smart-filter-selector/smart-filter-selector/smart-filter-selector/smart-filter-selector/app/services/__init__.py`
-- `/home/runner/work/smart-filter-selector/smart-filter-selector/smart-filter-selector/smart-filter-selector/app/utils/__init__.py`
+- `<repository-root>/smart-filter-selector/smart-filter-selector/app/__init__.py`
+- `<repository-root>/smart-filter-selector/smart-filter-selector/app/models/__init__.py`
+- `<repository-root>/smart-filter-selector/smart-filter-selector/app/routes/__init__.py`
+- `<repository-root>/smart-filter-selector/smart-filter-selector/app/services/__init__.py`
+- `<repository-root>/smart-filter-selector/smart-filter-selector/app/utils/__init__.py`
 
 They contribute package structure but no runtime branches or data flow.
 
