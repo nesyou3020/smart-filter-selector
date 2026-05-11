@@ -16,8 +16,6 @@ smart-filter-selector/smart-filter-selector/README.md
 smart-filter-selector/smart-filter-selector/SOA.md
 smart-filter-selector/smart-filter-selector/app
 smart-filter-selector/smart-filter-selector/app/__init__.py
-smart-filter-selector/smart-filter-selector/app/__pycache__
-smart-filter-selector/smart-filter-selector/app/__pycache__/__init__.cpython-312.pyc
 smart-filter-selector/smart-filter-selector/app/config.py
 smart-filter-selector/smart-filter-selector/app/main.py
 smart-filter-selector/smart-filter-selector/app/models
@@ -29,9 +27,6 @@ smart-filter-selector/smart-filter-selector/app/routes/__init__.py
 smart-filter-selector/smart-filter-selector/app/routes/filter_routes.py
 smart-filter-selector/smart-filter-selector/app/services
 smart-filter-selector/smart-filter-selector/app/services/__init__.py
-smart-filter-selector/smart-filter-selector/app/services/__pycache__
-smart-filter-selector/smart-filter-selector/app/services/__pycache__/__init__.cpython-312.pyc
-smart-filter-selector/smart-filter-selector/app/services/__pycache__/translation_service.cpython-312.pyc
 smart-filter-selector/smart-filter-selector/app/services/embedding_service.py
 smart-filter-selector/smart-filter-selector/app/services/hybrid_selector.py
 smart-filter-selector/smart-filter-selector/app/services/level_detector.py
