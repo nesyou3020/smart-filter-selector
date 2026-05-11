@@ -14,8 +14,8 @@ So this is an **AI-assisted filter recommendation service**.
 
 ## 2) High-level architecture
 
-Runtime code is in:
-- `./smart-filter-selector/smart-filter-selector`
+Runtime code is in (from the repository root):
+- `smart-filter-selector/smart-filter-selector`
 
 Main layers:
 1. **API layer** (`app/routes/filter_routes.py`) receives HTTP requests.
@@ -111,4 +111,4 @@ This architecture balances:
 ---
 
 Continue with the next part in:
-- `./smart_filter_selector_guide_part2.md`
+- `smart_filter_selector_guide_part2.md`
